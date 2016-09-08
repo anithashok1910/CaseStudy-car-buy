@@ -17,27 +17,6 @@ import java.util.ArrayList;
  */
 @Component
 public class CarDAO {
-    String FILENAME = "C:\\Users\\ashoka\\Desktop\\Final Project\\mock-data\\cars.json";
-
-    public ArrayList<com.cdk.carbuy.dto.Car> getCarData() throws FileNotFoundException {
-        Gson gson = new Gson();
-        JsonReader reader = new JsonReader(new FileReader(FILENAME));
-        com.cdk.carbuy.dto.Car cars[] = gson.fromJson(reader, com.cdk.carbuy.dto.Car[].class);
-        ArrayList<com.cdk.carbuy.dto.Car> carList = new ArrayList();
-        for(int i = 0; i<cars.length;i++){
-            com.cdk.carbuy.dto.Car car = new com.cdk.carbuy.dto.Car();
-            car.setId(cars[i].getId());
-            car.setMake(cars[i].getMake());
-            car.setModel(cars[i].getModel());
-            car.setYear(cars[i].getYear());
-            car.setPrice(cars[i].getPrice());
-            car.setDescription(cars[i].getDescription());
-            car.setImageURL(cars[i].getImageURL());
-            carList.add(car);
-        }
-        return carList;
-    }
-
 
     @Autowired
     private HibernateTemplate hibernateTemplate;
@@ -53,14 +32,9 @@ public class CarDAO {
     public Car addCar(Car car) {
         hibernateTemplate.save(car);
         return car;
-
-
     }
 
     public Car get(int carID) {
         return (Car) hibernateTemplate.get(Car.class,carID);
-
-
-
     }
 }

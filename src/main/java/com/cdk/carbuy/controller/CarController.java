@@ -1,10 +1,10 @@
 package com.cdk.carbuy.controller;
 
-import com.cdk.carbuy.dao.CarDAO;
-import com.cdk.carbuy.dao.OrderDAO;
 import com.cdk.carbuy.dto.Car;
 import com.cdk.carbuy.dto.Customer;
 import com.cdk.carbuy.dto.Order;
+import com.cdk.carbuy.services.CarService;
+import com.cdk.carbuy.services.OrderService;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,33 +22,34 @@ import java.util.ArrayList;
 @Controller
 public class CarController {
     @Autowired
-    private CarDAO carDAO = null;
+    private OrderService orderService =null;
 
-    public CarDAO getCarDAO() {
-        return carDAO;
+    public OrderService getOrderService() {
+        return orderService;
     }
 
-    public void setCarDAO(CarDAO carDAO) {
-        this.carDAO = carDAO;
+    public void setOrderService(OrderService orderService) {
+        this.orderService = orderService;
     }
 
     @Autowired
-    private OrderDAO orderDAO= null;
+    private CarService carService = null;
 
-    public OrderDAO getOrderDAO() {
-        return orderDAO;
+    public CarService getCarService() {
+        return carService;
     }
 
-    public void setOrderDAO(OrderDAO orderDAO) {
-        this.orderDAO = orderDAO;
+    public void setCarService(CarService carService) {
+        this.carService = carService;
     }
+
 
     @RequestMapping(value = "/list",method = RequestMethod.GET)
     public @ResponseBody
     ArrayList<Car> getCarListings(HttpServletRequest request, HttpServletResponse response){
         ArrayList<Car> carList = null;
         try {
-            carList = carDAO.getCarData();
+            carList = carService.getCars();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -75,7 +76,7 @@ public class CarController {
         Order order = new Order();
         order.setCustomer(customer);
         order.setCar(car);
-        order=orderDAO.addOrder(order);
+        order=orderService.addOrder(order);
         Gson gson = new Gson();
         return gson.toJson(order);
     }

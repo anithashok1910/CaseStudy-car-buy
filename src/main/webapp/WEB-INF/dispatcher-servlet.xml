@@ -27,6 +27,8 @@ p:prefix="/" p:suffix=".html" />
                 <value>com.cdk.carbuy.dao.OrderDAO</value>
                 <value>com.cdk.carbuy.dao.CarDAO</value>
                 <value>com.cdk.carbuy.dao.CustomerDAO</value>
+                <value>com.cdk.carbuy.services.CarService</value>
+                <value>com.cdk.carbuy.services.OrderService</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -46,4 +48,5 @@ p:prefix="/" p:suffix=".html" />
     <context:component-scan base-package="com.cdk.carbuy.controller"/>
     <context:component-scan base-package="com.cdk.carbuy.domain"/>
     <context:component-scan base-package="com.cdk.carbuy.dao"/>
+    <context:component-scan base-package="com.cdk.carbuy.services"/>
 </beans>

@@ -33,12 +33,5 @@ public class OrderDAO {
         return order;
     }
 
-    public Order parseOrderRequest(String jsonString) throws FileNotFoundException {
-         final String FILENAME = "C:\\Users\\ashoka\\Desktop\\Week 7\\TestCode\\src\\com\\company\\order.json";
-        Gson gson = new Gson();
-        JsonReader reader = new JsonReader(new FileReader(FILENAME));
-        Order[]orders = gson.fromJson(reader, Order[].class);
-        Order order = orders[0];
-        return order;
-    }
+
 }

@@ -72,12 +72,14 @@ public class Car {
         this.year = year;
     }
 
-    public Car(int id, String make, String model, int year,int price) {
+    public Car(int id, String make, String model, int year, int price, String[] description, String imageURL) {
         this.id = id;
         this.make = make;
         this.model = model;
         this.year = year;
-        this.price = year;
+        this.price = price;
+        this.description = description;
+        this.imageURL = imageURL;
     }
 
     public Car() {
