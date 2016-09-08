@@ -13,7 +13,7 @@ app.controller('MainCtrl', function ($scope, $http) {
         }).then(function mySuccess(response) {
             $scope.cars = response.data;
         }, function myError(response) {
-            alert("Unable to process request! Please try later");
+            alert("Unable to process request! Please try again later");
             $scope.cars = response.statusText;
         });
     }
@@ -65,7 +65,6 @@ app.controller('MainCtrl', function ($scope, $http) {
     }
 
     $scope.sendValues=function() {
-
         var customerId = 0;
         var name = $scope.name;
         var address = $scope.address;
