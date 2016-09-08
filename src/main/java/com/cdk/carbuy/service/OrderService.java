@@ -1,4 +1,4 @@
-package com.cdk.carbuy.services;
+package com.cdk.carbuy.service;
 
 import com.cdk.carbuy.dao.OrderDAO;
 import com.cdk.carbuy.dto.Order;

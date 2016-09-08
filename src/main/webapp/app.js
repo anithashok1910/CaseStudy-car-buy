@@ -33,6 +33,7 @@ app.controller('MainCtrl', function ($scope, $http) {
     $scope.sendData = function (car, customer) {
         var order_ID = 0;
         var order = new Order(order_ID,car,customer);
+        console.log(order)
         var params = {
             "carId": car.id,
             "model": car.model,
@@ -49,6 +50,7 @@ app.controller('MainCtrl', function ($scope, $http) {
             method: 'POST',
             params: params,
             paramSerializer: '$httpParamSerializerJQLike',
+            contentType:"application/json",
             dataType:"JSON"
 
         }).then(function mySucces(response) {
@@ -57,6 +59,7 @@ app.controller('MainCtrl', function ($scope, $http) {
             $scope.afterOrder= true;
         }, function myError(response) {
             alert("Unable to process request! Please try later");
+            console.log(response.data);
 
         });
     }
@@ -68,46 +71,38 @@ app.controller('MainCtrl', function ($scope, $http) {
         var address = $scope.address;
         var email = $scope.email;
         var contactNo = $scope.phone;
-        var Id = $scope.id;
-        console.log(Id);
+        var id = $scope.id;
         var make = $scope.make;
-        console.log(make);
         var model = $scope.model;
-        console.log(model);
         var price = $scope.price;
-        console.log(price);
         var year = $scope.year;
-        console.log(year);
-        var car = new Car(Id, make, model, price, year);
-
+        var car = new Car(id, make, model, price, year);
         var customer = new Customer(customerId, name, address, email, contactNo);
         $scope.sendData(car, customer);
         return false;
     }
 
-    Car = function(Id, make, model, price, year) {
-        this.id = Id;
+     function Car(id, make, model, price, year) {
+        this.id = id;
         this.make = make;
         this.model = model;
         this.year = year;
         this.price = price;
-
     }
 
-    Order = function (orderID,car,customer) {
+    function Order(orderID,car,customer) {
         this.orderID = orderID;
         this.car = car;
         this.customer = customer;
     }
-   Customer = function(Id, name, address, email, contactNo) {
+
+    function Customer(Id, name, address, email, contactNo) {
         this.customerId = Id;
         this.name = name;
         this.address = address;
         this.email = email;
-        this.mob_no = contactNo;
-
+        this.mobileNumber = contactNo;
     }
-
 });
 
 

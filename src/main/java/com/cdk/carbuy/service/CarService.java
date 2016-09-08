@@ -1,4 +1,4 @@
-package com.cdk.carbuy.services;
+package com.cdk.carbuy.service;
 
 import com.cdk.carbuy.dao.CarDAO;
 import com.cdk.carbuy.dto.Car;
@@ -8,7 +8,6 @@ import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 /**

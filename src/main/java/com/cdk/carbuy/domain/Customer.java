@@ -25,8 +25,8 @@ public class Customer {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "mob_no")
-    private long mob_no;
+    @Column(name = "mobileNumber")
+    private long mobileNumber;
 
     @Override
     public String toString() {
@@ -35,7 +35,7 @@ public class Customer {
                 ", name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 "email id =" + email + '\'' +
-                "mobile number =" + mob_no + '\''+
+                "mobile number =" + mobileNumber + '\''+
                 '}';
     }
 
@@ -47,12 +47,12 @@ public class Customer {
         this.email = email;
     }
 
-    public long getMob_no() {
-        return mob_no;
+    public long getMobileNumber() {
+        return mobileNumber;
     }
 
-    public void setMob_no(long mob_no) {
-        this.mob_no = mob_no;
+    public void setMobileNumber(long mobileNumber) {
+        this.mobileNumber = mobileNumber;
     }
 
     public String getAddress() {
@@ -86,7 +86,7 @@ public class Customer {
         this.name = customer.getName();
         this.address = customer.getAddress();
         this.email = customer.getEmail();
-        this.mob_no = customer.getMob_no();
+        this.mobileNumber = customer.getMobileNumber();
 
     }
 }

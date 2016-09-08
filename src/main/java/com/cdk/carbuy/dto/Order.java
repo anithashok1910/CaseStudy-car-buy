@@ -8,18 +8,18 @@ package com.cdk.carbuy.dto;
 
 public class Order {
 
-    private int orderID;
+    private int orderId;
 
     private Customer customer;
 
     private Car car;
 
-    public int getOrderID() {
-        return orderID;
+    public int getOrderId() {
+        return orderId;
     }
 
-    public void setOrderID(int orderID) {
-        this.orderID = orderID;
+    public void setOrderId(int orderId) {
+        this.orderId = orderId;
     }
 
     public Car getCar() {
@@ -35,12 +35,17 @@ public class Order {
     }
 
     public Order(com.cdk.carbuy.domain.Order order){
-        this.setOrderID(order.getOrderID());
+        this.setOrderId(order.getOrderID());
         this.car=new Car(order.getCar());
         this.customer = new Customer(order.getCustomer());
     }
 
     public Order() {
+    }
+
+    public Order(Customer customer, Car car) {
+        this.customer = customer;
+        this.car = car;
     }
 
     public void setCustomer(Customer customer) {
@@ -50,7 +55,7 @@ public class Order {
         @Override
     public String toString() {
         return "Order{" +
-                "orderID=" + orderID +
+                "orderID=" + orderId +
                 ", car=" + car +
                 ", customer=" + customer +
                 '}';

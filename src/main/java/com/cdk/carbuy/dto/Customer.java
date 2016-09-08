@@ -16,7 +16,7 @@ public class Customer {
 
     private String email;
 
-    private long mob_no;
+    private long mobileNumber;
 
     public String getAddress() {
         return address;
@@ -24,6 +24,14 @@ public class Customer {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public Customer(int customerId, String name, String address, String email, long mobileNumber) {
+        this.customerId = customerId;
+        this.name = name;
+        this.address = address;
+        this.email = email;
+        this.mobileNumber = mobileNumber;
     }
 
     @Override
@@ -59,12 +67,12 @@ public class Customer {
         this.email = email;
     }
 
-    public long getMob_no() {
-        return mob_no;
+    public long getMobileNumber() {
+        return mobileNumber;
     }
 
-    public void setMob_no(long mob_no) {
-        this.mob_no = mob_no;
+    public void setMobileNumber(long mobileNumber) {
+        this.mobileNumber = mobileNumber;
     }
 
     public Customer(com.cdk.carbuy.domain.Customer customer){
@@ -72,7 +80,7 @@ public class Customer {
         this.name = customer.getName();
         this.address = customer.getAddress();
         this.email = customer.getEmail();
-        this.mob_no = customer.getMob_no();
+        this.mobileNumber = customer.getMobileNumber();
     }
 }
 

@@ -82,6 +82,14 @@ public class Car {
         this.imageURL = imageURL;
     }
 
+    public Car(int id, String make, String model, int year, int price) {
+        this.id = id;
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.price = price;
+    }
+
     public Car() {
     }
     public Car(com.cdk.carbuy.domain.Car car){
