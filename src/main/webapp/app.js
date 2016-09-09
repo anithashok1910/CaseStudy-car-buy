@@ -57,11 +57,19 @@ app.controller('MainCtrl', function ($scope, $http) {
             $scope.order = response.data;
             $scope.beforeOrder = false;
             $scope.afterOrder= true;
+            $scope.resetForm();
         }, function myError(response) {
             alert("Unable to process request! Please try later");
             console.log(response.data);
 
         });
+    }
+    $scope.resetForm=function () {
+        $scope.name="";
+        $scope.address="";
+        $scope.email="";
+        $scope.phone="";
+
     }
 
     $scope.sendValues=function() {
@@ -78,6 +86,7 @@ app.controller('MainCtrl', function ($scope, $http) {
         var car = new Car(id, make, model, price, year);
         var customer = new Customer(customerId, name, address, email, contactNo);
         $scope.sendData(car, customer);
+
         return false;
     }
 

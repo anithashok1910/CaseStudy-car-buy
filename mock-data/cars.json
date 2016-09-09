@@ -5,7 +5,7 @@
     "make": "AM General",
     "model": "Hummer",
     "year": "1998",
-    "imageURL": "30200_01_splash_original.jpg",
+    "imageURL": "am-general-hummer.jpg",
     "price": "876590",
     "description":  ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   },
@@ -14,7 +14,7 @@
     "make": "Volvo",
     "model": "Volvo_XC70",
     "year": "1999",
-    "imageURL": "25-cars-worth-waiting-for-lp-ford-gt-photo-658253-s-original.jpg",
+    "imageURL": "volvo-xc90.jpg",
     "price": "876590",
     "description":  ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   },
@@ -23,7 +23,7 @@
     "make": "Honda",
     "model": "Civic_XP72",
     "year": "2009",
-    "imageURL": "A-muscular-estate-car.jpg",
+    "imageURL": "honda civic.jpg",
     "price": "876590",
     "description":  ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   },
@@ -32,7 +32,7 @@
     "make": "Honda",
     "model": "City_XVDI",
     "year": "2012",
-    "imageURL": "AMAZE.png",
+    "imageURL": "honda-city.png",
     "price": "876590",
     "description": [
       "Engine Type - SMARTECH",
@@ -46,7 +46,7 @@
     "make": "Toyota",
     "model": "Etios_XC70",
     "year": "2007",
-    "imageURL": "Beautiful Blue Car Wallpapers (9).jpg",
+    "imageURL": "Toyota etios.jpg",
     "price": "876590",
     "description":  ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   },
@@ -55,7 +55,7 @@
     "make": "Suzuki",
     "model": "Swift",
     "year": "2008",
-    "imageURL": "punto-pure-banner.jpg",
+    "imageURL": "suzuki swift.jpg",
     "price": "876590",
     "description":  ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   },
@@ -64,7 +64,7 @@
     "make": "Nissan",
     "model": "Micra",
     "year": "2010",
-    "imageURL": "hhhhhhh.jpg",
+    "imageURL": "nissan micra.png",
     "price": "876590",
     "description":  ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   },
@@ -73,7 +73,7 @@
     "make": "BMW",
     "model": "M3 F80",
     "year": "2012",
-    "imageURL": "cq5dam.resized.img.1680.large.time1465464150543.jpg",
+    "imageURL": "bmw m4.jpg",
     "price": "876590",
     "description": ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   },
@@ -82,7 +82,7 @@
     "make": "BMW",
     "model": "Q 2AA1",
     "year": "2011",
-    "imageURL": "FORD_FOCU_2012-1.png",
+    "imageURL": "BMW-X6.png",
     "price": "876590",
     "description":  ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   },
@@ -91,7 +91,7 @@
     "make": "Cadillac",
     "model": "CTS Coupe",
     "year": "2012",
-    "imageURL": "HERO_595.jpg",
+    "imageURL": "cadillac-cts-coupe.jpg",
     "price": "876590",
     "description":  ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   },
@@ -100,7 +100,7 @@
     "make": "Chevrolet",
     "model": "Corvette Stingray",
     "year": "2014",
-    "imageURL": "images.jpg",
+    "imageURL": "chevrolet corvette stingray.jpg",
     "price": "876590",
     "description":  ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   },
@@ -109,7 +109,7 @@
     "make": "Dodge",
     "model": "SRT Viper",
     "year": "2013",
-    "imageURL": "luxury_cars.jpg",
+    "imageURL": "dodge-viper.jpg",
     "price": "876590",
     "description":  ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   },
@@ -118,7 +118,7 @@
     "make": "Ford",
     "model": "Shelby GT500",
     "year": "2014",
-    "imageURL": "MSIL-banner-bookings launch430.jpg",
+    "imageURL": "ford-shelby.jpg",
     "price": "876590",
     "description":  ["Engine Type - SMARTECH", " Diesel Engine", "No. of Cylinders - 4","Maximum Power - 73.74bhp@4000rpm", "Maximum Torque - 172.5Nm@1750rpm"]
   }
